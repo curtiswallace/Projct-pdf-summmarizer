@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Summarization API</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">PDF<span class="logo_colour">SUMMARIZATION</span></a></h1>
+          <h2>API GUIDE DOCUMENTATION</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <!--<li><a href="examples.html">Examples</a></li>
+          <li><a href="page.html">A Page</a></li>
+          <li><a href="another_page.html">Another Page</a></li>
+          <li><a href="contact.html">Contact Us</a></li>-->
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="banner"></div>
+	  <div id="sidebar_container">
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3><a href="https://github.com/curtiswallace/Projct-pdf-summmarizer">GITHUB REPOSITORY HERE</a></h3>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>ENDPOINTS</h3>
+            <ul>
+              <li>SIGN UP</a></li>
+              <li>LOGIN</a></li>
+              <li>SUMMARIZE</a></li>
+              <li>CREDITS</a></li>
+            </ul>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <!--<div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Search</h3>
+            <form method="post" action="#" id="search_form">
+              <p>
+                <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+              </p>
+            </form>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>-->
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Welcome to the Summarize PDF API Documentation</h1>
+        <p>This API is 'open source' and makes use of OpenAI (<a href="https://platform.openai.com/docs/api-reference/introduction">Documentation found here</a>), which means that you are free to consume it for anything you want. </p>
+        <p>The API has 4 endpoints, <strong>Sign Up</strong>, <strong>Login</strong>, <strong>Summarize</strong> and <strong>Credits</strong> all of which can be consumed</p>
+        <p>This API uses the FastAPI library, (<a href="https://fastapi.tiangolo.com/">documentation found here)</a>.</p>
+        
+        <h2>Sign Up:</h2>
+        <p>This endpoint requires the name, email address and password parameters</p>
+		<p>User information is then entered into the MongoDB</p>
+		<h2>Signin:</h2>
+        <p>This endpoint requires the email address and password parameters</p>
+		<p>User information is then checked against the database to authenticate the user</p>
+		<h2>Summarize</h2>
+        <p>This endpoint is protected by JWTBearer tokens that are sent with authenticated users</p>
+		<p>Once authenticated, PDF files can be uploaded and sent to ChatGPT for summarization</p>
+		<h2>Credits</h2>
+        <p>This endpoint defines the amount of times a user can carry out a summarization request</p>
+		<p>Each new user gets given 3 credits to use</p>
+        <ul>
+          <li>FOR FURTHER INFORMATION, VISIT THE OFFICIAL GITHUB REPOSITORY FOR THIS API</li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="https://github.com/curtiswallace/Projct-pdf-summmarizer">GitHub Repository</a></p>
+      <p>Copyright &copy; SummarizeAPI</p>
+    </div>
+  </div>
+</body>
+</html>
